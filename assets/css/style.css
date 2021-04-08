@@ -1,0 +1,140 @@
+/* ----------- CSS PERSO ---------- */
+
+
+/* MES OUTILS */
+.logof {
+    margin-bottom: 20px;
+    width: 4.5em;
+}
+
+#some-element {
+    display: none;
+    float: right;
+    font-size: 30px;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+  
+  #some-div:hover #some-element {
+    width: 200px;
+    display: inline-block;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-weight: bold;
+  }
+
+  /* CONTACT */
+.contactlogo {
+  max-width: 20px;
+  max-height: 20px;
+  margin-right: 5px;
+}
+
+/* MENU POINTS */
+.centre { /* change ce bloc si tu veux modifier là où tu veux placer le menu */
+	position: -webkit-sticky;
+	position: fixed;
+	bottom: 5%; /* Espace du menu au bas de la page */
+	left:0%;
+	right:0%;
+	text-align: center;
+	z-index: 1;
+}
+
+.menuun { /* MENUD = des symbole points = texte */
+	color:#2e2b37;
+	margin-left: 20px;
+	border:none;
+	font-size: 5em; /* change la taille des points ici */
+	height: 10em;
+	width: 10em;
+}
+
+.menuun:hover {
+	color:#ffffff;
+	transform: scale(1.5);
+}
+
+.menudeux { /* ZOOM = des div carré arrondies, donc pas le meme comportement que le texte ! (le zoom serais pas possible) */
+	transition: transform .2s;
+	margin-left: 20px;
+	height: 20px; /* change la taille des points ici */
+	width: 20px;
+	background-color: black;
+	border-radius: 30em; /* Si tu met ca a zero, les points seront carré ! (pour le menu 2) */
+	border-bottom: none; /* retire le soulignement degueu des balise <a> par default (sur ce doc) RDV LIGNE 357 pour l'enlever définitivement de tout les liens */
+	display: inline-block;
+	white-space: nowrap;
+	z-index: 0; /* Pour mettre qlq chose au premier plan, mais comme le doc a dautre truc en index 0 bah si ton menu de point est trop haut, tu va le voir disparaitre derriere les pages */
+  }
+  
+  .menudeux:hover {
+	-ms-transform: scale(1.2); /* IE 9 */
+	-webkit-transform: scale(1.2); /* Safari 3-8 */
+	transform: scale(1.2);
+	background-color: white;
+  }
+
+  /* TOP RIGHT CLOSE */
+
+  .topright {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+  }
+
+  /* 3 COLONNES */
+
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 30px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .column {
+      float: left;
+      width: 100%;
+      padding: 20px;
+    }
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .nuages {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+  }
+  
+  /* AUTRE */
+
+  .tocenter {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+
+  /* DESCRIPTION IMAGES */
+
+  
+.retouche {
+  background-color : rgba(255, 255, 255, 0.247);
+  padding: 4px;
+  position:absolute;
+  bottom:10px;
+  right: 10px;
+  border-top-left-radius:10px;
+  z-index:1;
+  font-size:15px;
+  color:white;
+}
