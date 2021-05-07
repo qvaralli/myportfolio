@@ -1,0 +1,57 @@
+
+
+.section {
+  height: 70ch;
+  /* width: 100%; */
+  margin-left: auto;
+  margin-right: auto;
+}
+/* 
+.before {
+  background: url('https://tr.af/images/preset-05-b.jpg') no-repeat center center;
+  background-size: cover;
+} */
+
+.section-wrapper {
+  position:absolute;
+  height: 100%;
+  width: 100%;
+  /* margin-top: 10ch; */
+}
+
+.before-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  height: 100%;
+  width: auto;
+}
+
+.before-wrapper:before {
+  display: block;
+  height: 100%;
+  width: 100%;
+  content: '';
+}
+
+.after-wrapper {
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
+  position: absolute;
+  overflow: hidden;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.after {
+  /* background: url('https://tr.af/images/preset-05-a.jpg') no-repeat center center; */
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-size: cover;
+  position: relative;
+  display: block;
+  height: 100%;
+  width: auto;
+}
