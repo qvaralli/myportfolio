@@ -41,6 +41,7 @@
 	z-index: 1;
 }
 
+
 .menuun { /* MENUD = des symbole points = texte */
 	color:#2e2b37;
 	margin-left: 20px;
@@ -137,4 +138,14 @@
   z-index:1;
   font-size:15px;
   color:white;
+}
+
+/* VERTICAL ALIGN */
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
