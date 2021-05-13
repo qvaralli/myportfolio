@@ -38,23 +38,9 @@
 	left:0%;
 	right:0%;
 	text-align: center;
-	z-index: 1;
+	z-index: 1 !important;
 }
 
-
-.menuun { /* MENUD = des symbole points = texte */
-	color:#2e2b37;
-	margin-left: 20px;
-	border:none;
-	font-size: 5em; /* change la taille des points ici */
-	height: 10em;
-	width: 10em;
-}
-
-.menuun:hover {
-	color:#ffffff;
-	transform: scale(1.5);
-}
 
 .menudeux { /* ZOOM = des div carré arrondies, donc pas le meme comportement que le texte ! (le zoom serais pas possible) */
 	transition: transform .2s;
@@ -67,9 +53,10 @@
 	display: inline-block;
 	white-space: nowrap;
 	z-index: 0; /* Pour mettre qlq chose au premier plan, mais comme le doc a dautre truc en index 0 bah si ton menu de point est trop haut, tu va le voir disparaitre derriere les pages */
-  }
+  box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.329);
+}
   
-  .menudeux:hover {
+  .menudeux:hover , .activebullet{
 	-ms-transform: scale(1.2); /* IE 9 */
 	-webkit-transform: scale(1.2); /* Safari 3-8 */
 	transform: scale(1.2);
