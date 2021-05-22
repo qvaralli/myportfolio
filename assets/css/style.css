@@ -73,6 +73,9 @@
     border-radius: 50%;
     background-color: red;
     color: white;
+    top: 10px !important; 
+    right: 30px !important; 
+    position:absolute !important;
   }
 
   /* 3 COLONNES */
