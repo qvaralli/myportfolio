@@ -1,7 +1,8 @@
 
 
 .section {
-  height: 70ch;
+  height: 30em;
+  display: flex;
   /* width: 100%; */
   margin-left: auto;
   margin-right: auto;
@@ -13,7 +14,6 @@
 } */
 
 .section-wrapper {
-  position:absolute;
   height: 100%;
   width: 100%;
   /* margin-top: 10ch; */
