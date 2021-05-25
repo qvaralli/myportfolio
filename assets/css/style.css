@@ -19,7 +19,7 @@
   #some-div:hover #some-element {
     width: 200px;
     display: inline-block;
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-family: 'Hind Siliguri', sans-serif;
     font-weight: bold;
   }
 
@@ -91,6 +91,10 @@
       float: left;
       width: 100%;
       padding: 20px;
+    }
+
+    .centre {
+      display: none;
     }
   }
   
