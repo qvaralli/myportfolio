@@ -19,7 +19,7 @@
   #some-div:hover #some-element {
     width: 200px;
     display: inline-block;
-    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'Posterama Text W07 Regular', sans-serif;
     font-weight: bold;
   }
 
@@ -27,7 +27,6 @@
 .contactlogo {
   max-width: 20px;
   max-height: 20px;
-  margin-right: 5px;
 }
 
 /* MENU POINTS */
