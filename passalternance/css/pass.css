@@ -1,6 +1,15 @@
 /* CSS */
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap');
 
+::selection {
+    color:white;
+	background: #a85661a4; /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+    color:white;
+	background:  #ba606c77; /* Gecko Browsers */
+  }
+
 .centrepass {
     float: center;
 	position: -webkit-sticky;
@@ -34,7 +43,10 @@
 
 .hind {
 	font-family: 'Hind Siliguri'!important;
-	font-size: 30px;
+	font-size: 20px;
+	margin-bottom: 40px;
+	margin-top: -15px;
+	margin-left: 30px;
 }
 .onpc {
 	font-size: 50px;
@@ -79,7 +91,7 @@
 	}
 	
 	.wrapper { 
-		position: static !important;
+		position: fixed !important;
 	}
 
 	.onpc {
@@ -88,6 +100,17 @@
 
 	.onphone {
 		display: block;
+	}
+	
+	.hind {
+		font-family: 'Hind Siliguri'!important;
+		font-size: 20px;
+		margin-left: 30px;
+	}
+
+	.eyes {
+		height: 18px !important;
+		width: 20px !important;
 	}
 }
 
