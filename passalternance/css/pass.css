@@ -1,5 +1,5 @@
 /* CSS */
-
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap');
 
 .centrepass {
     float: center;
@@ -32,6 +32,10 @@
     width: auto;
 }
 
+.hind {
+	font-family: 'Hind Siliguri'!important;
+	font-size: 30px;
+}
 .onpc {
 	font-size: 50px;
 	height: 300px;
@@ -44,6 +48,9 @@
 	display: none;
 }
 
+.eyes {
+	height: 25px !important;
+}
 
 @media screen and (max-width: 700px) {
 

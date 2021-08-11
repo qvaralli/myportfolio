@@ -1,0 +1,93 @@
+.centrepass img{
+    float: left;
+    margin-top: 0px;
+    height: 100px;
+    width: auto;
+    text-align: end;
+}
+
+* {
+    box-sizing: border-box;
+  }
+.row {
+    margin-right: 10%;
+    margin-left: 0%;
+    text-align: left;
+}
+/* Create two equal columns that floats next to each other */
+.column {
+    width: 50% !important;
+    padding: 10px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.googlecarte {
+    width: 100%;
+    height: 100%;
+}
+  /* FOND CARTE */
+
+
+  .carte {
+    position: relative;
+    height: 500px;
+    line-height: 30vw;
+    text-align: center;
+    color: #252B37;
+    /* background-color: #151823; */
+    animation: textColor 10s ease infinite;
+  }
+  .carte:after {
+    position: absolute;
+    content: "";
+    top: 5vw;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 130%;
+    width: 130%;
+    margin-top: -130px;
+    margin-left: -130px;
+    transform: scale(0.75);
+    -webkit-filter: blur(5vw);
+    -moz-filter: blur(5vw);
+    -ms-filter: blur(5vw);
+    filter: blur(5vw);
+    background: linear-gradient(270deg, #5c2ca5, #bb3345, #bd4e26, #ebba34e1);
+    background-size: 200% 200%;
+    animation: animateGlow 10s ease infinite;
+  }
+  @keyframes animateGlow {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  /* texte */
+
+   .cartetxt {
+    -webkit-animation: flicker 4s infinite alternate;
+   }
+   
+   @-webkit-keyframes flicker {
+    0% {
+     color: #5c2ca5;
+    }
+    50% {
+     color: #bb3345;
+    }
+    100% {
+     color: #b9625f;
+    }
+   }
