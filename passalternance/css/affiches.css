@@ -1,0 +1,243 @@
+body:after:before {
+background: none !important;
+    background-image: url("_blank");
+
+}
+
+
+.centrepass img{
+    float: left;
+    margin-top: 0px;
+    height: 0px;
+    width: auto;
+    text-align: end;
+}
+
+* {
+    box-sizing: border-box;
+  }
+.row {
+    margin-right: 10%;
+    margin-left: 0%;
+    text-align: left;
+}
+/* Create two equal columns that floats next to each other */
+.column {
+    width: 50% !important;
+    padding: 10px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.googlecarte {
+    width: 100%;
+    height: 100%;
+}
+  /* FOND CARTE */
+
+
+  .carte {
+    position: relative;
+    height: 500px;
+    line-height: 30vw;
+    text-align: center;
+    color: #252B37;
+    /* background-color: #151823; */
+    animation: textColor 10s ease infinite;
+  }
+  .carte:after {
+    position: absolute;
+    content: "";
+    top: 5vw;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 130%;
+    width: 130%;
+    margin-top: -130px;
+    margin-left: -130px;
+    transform: scale(0.75);
+    -webkit-filter: blur(5vw);
+    -moz-filter: blur(5vw);
+    -ms-filter: blur(5vw);
+    filter: blur(5vw);
+    background: linear-gradient(270deg, #675680, #BA606C, #f4c385);
+    background-size: 200% 200%;
+    animation: animateGlow 10s ease infinite;
+  }
+  @keyframes animateGlow {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  /* texte */
+
+   .cartetxt {
+    -webkit-animation: flicker 4s infinite alternate;
+   }
+   
+   @-webkit-keyframes flicker {
+    0% {
+     color: #675680;
+    }
+    50% {
+     color: #BA606C;
+    }
+    100% {
+     color: #80567e;
+    }
+   }
+
+   /* .logopass {
+    -webkit-animation: logopass 4s infinite alternate;
+   }
+   
+
+   @-webkit-keyframes  logopass {
+    0% {
+     background-color: #6b5680;
+    }
+    50% {
+     background-color:  #bd606b;
+    }
+    100% {
+     background-color:  #e58b70;
+    }
+   } */
+
+   .logopass { 
+   
+  background: linear-gradient(40deg, #675680, #BA606C, #f4c385);
+  background-size: 200% 200%;
+  
+  -webkit-animation: rainbow 10s ease infinite;
+  -z-animation: rainbow 10s ease infinite;
+  -o-animation: rainbow 10s ease infinite;
+    animation: rainbow 10s ease infinite;}
+
+   @-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+
+/* move right */
+
+
+.move-right:after {
+    top: 0;
+    content: "";
+    position: absolute;
+    z-index: -1
+}
+.move-right:after,
+.move-right:focus:after,
+.move-right:hover:after {
+    width: 3px;
+    height: 100%
+}
+
+.move-right:after {
+    right: 50%
+}
+
+.move-right:hover:after {
+    right: 0
+}
+
+.move-right {
+    position: relative;
+    z-index: 2;
+    text-decoration: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+    padding: 10px;
+    white-space: nowrap;
+    overflow: hidden
+}
+
+.move-right {
+    -webkit-transition: color 1s ease;
+    -moz-transition: color 1s ease;
+    -ms-transition: color 1s ease;
+    -o-transition: color 1s ease;
+    cursor: pointer
+}
+
+.move-right {
+    display: inline;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: color 1s ease
+}
+
+.move-right:focus,
+.move-right:hover {
+    outline: 0;
+    color: #BA606C;
+    -webkit-transition: color 1s ease;
+    -moz-transition: color 1s ease;
+    -ms-transition: color 1s ease;
+    -o-transition: color 1s ease;
+    transition: color 1s ease;
+    cursor: pointer
+}
+
+.move-right:after,
+.move-right:before {
+    -webkit-transition: all 1s ease 0s;
+    -moz-transition: all 1s ease 0s;
+    -ms-transition: all 1s ease 0s;
+    -o-transition: all 1s ease 0s;
+    transition: all 1s ease 0s
+}
+
+.move-right:focus:after,
+.move-right:focus:before,
+.move-right:hover:after,
+.move-right:hover:before {
+    outline: 0;
+    background-color: #BA606C;
+    -webkit-transition: all 1s ease 0s;
+    -moz-transition: all 1s ease 0s;
+    -ms-transition: all 1s ease 0s;
+    -o-transition: all 1s ease 0s;
+    transition: all 1s ease 0s
+}
+
+
+
+/* cadre */
+
