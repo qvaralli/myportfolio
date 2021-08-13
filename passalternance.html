@@ -55,15 +55,14 @@
                     
                     <div>
                       
-                      <div class="etudiant" >
-                        <h2 class="textFade1" style="font-size: 2em; ">Rassurez-vous !</h2>
-                        <p class="textFade2" style="font-size: 5vw; margin-bottom: 0; ">Ceci n'est pas</p>
-                        <p class="textFade3" style="font-size: 5vw; margin-bottom: 0; ">un nouveau pass sanitaire,</p>
-                        <p class="textFade4" style="font-size: 7vw;">mais un projet étudiant !</p>
+                      <div class="etudiant">
+                        <h2 id="wait1" class="textFade1" style="font-size: 2em; ">Rassurez-vous !</h2>
+                        <p id="wait2" class="textFade2" style="font-size: 5vw; margin-bottom: 0; ">Ceci n'est pas</p>
+                        <p id="wait3" class="textFade3" style="font-size: 5vw; margin-bottom: 0; ">un nouveau pass sanitaire,</p>
+                        <p id="wait4" class="textFade4" style="font-size: 7vw;">mais un projet étudiant !</p>
                         
                       </div>
-                      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<div id="mydiv">myDiv</div>
+                      
                       <div class="hind"><a href="affiches.html">Où trouver une affiche ?</a>  <span><img class="eyes" src="passalternance/eyes.png"></span></div>
 
                       <p>Félicitation !</p>
@@ -88,9 +87,18 @@
         
     </body>
     <script>
-      setTimeout(function() {
-    $('#mydiv').hide();
-});
+setTimeout(function(){
+document.getElementById('wait1').style.visibility = "visible";
+},1000);
+setTimeout(function(){
+document.getElementById('wait2').style.visibility = "visible";
+},2200);
+setTimeout(function(){
+document.getElementById('wait3').style.visibility = "visible";
+},2400);
+setTimeout(function(){
+document.getElementById('wait4').style.visibility = "visible";
+},4000);
     </script>
     
 </html>
