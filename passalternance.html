@@ -16,19 +16,26 @@
 	</head>
 	<body style="overflow: visible;">
         <div class="wrapper">
-           
             <div class="centrepass" style="overflow: visible !important;">
-                <img src="passalternance/passlogo.png"/>
+
+                
                 
                 <div class="onpc">
-                  
+
+                  <img src="passalternance/passlogo.png"/>
+
                   <p>Scannez le QR CODE de l'une de nos affiches !</p>
                   <a class="fill-right">#PassAlternance2021</a>
                   <div class="hind"><a href="affiches.html">Où trouver une affiche ?</a>  <span><img class="eyes" src="passalternance/eyes.png"></span></div>
-
                 </div>
 
                 <div class="onphone">
+                  <!-- PAGE 1 -->
+                  <div id="page1">
+
+                    <img src="passalternance/passlogo.png"/>
+
+                    <!-- ANIMATION -->
                     <div class="mainfade">
                     <main>
                         <div id="animation-1" class="animation" style="margin-left: 35% !important;">
@@ -50,21 +57,30 @@
                       </div> -->
                     </main>
 
+                    </div>
+                    <div class="etudiant">
+                      <h2 id="wait1" style="font-size: 10vw; ">Rassurez-vous !</h2>
+                      <p id="wait2" style="font-size: 5vw; margin-bottom: 0; ">Ceci n'est pas<br/>un nouveau pass sanitaire,</p>
+                      <p id="wait3"  style="font-size: 7vw;">mais un projet étudiant !</p>
+                    </div>
+
+                    
+                    <button id="wait4" onclick="document.getElementById('id01').style.display='block'" class="button primary color1 circle icon solid fa-caret-down tocenter"></button>
+              
+
                   </div>
-                    
-                    
-                    <div>
-                      
-                      <div class="etudiant">
-                        <h2 id="wait1" class="textFade1" style="font-size: 10vw; ">Rassurez-vous !</h2>
-                        <p id="wait2" class="textFade2" style="font-size: 5vw; margin-bottom: 0; ">Ceci n'est pas<br/>un nouveau pass sanitaire,</p>
-                        <p id="wait3" class="textFade3" style="font-size: 7vw;">mais un projet étudiant !</p>
-                      </div>
-                      
-                      <div>
-                        <button onclick="document.getElementById('id01').style.display='block'" class="button primary color1 circle icon solid fa-caret-down tocenter"></button>
-								
-                      </div>
+
+                    <!-- PAGE 2 -->
+                  <div id="page2">
+
+
+                    <img class="photopp" src="passalternance/QV_Profil.png"/>
+                    <div id="explications">
+                     
+                      <p>
+                        C'est un projet dédié à ma recherche d'alternance en graphisme.
+                      </p>
+                    </div>
 
                       <div class="hind"><a href="affiches.html">Où trouver une affiche ?</a>  <span><img class="eyes" src="passalternance/eyes.png"></span></div>
 
@@ -90,15 +106,22 @@
         
     </body>
     <script>
-setTimeout(function(){
-document.getElementById('wait1').style.visibility = "visible";
-},5500);
-setTimeout(function(){
-document.getElementById('wait2').style.visibility = "visible";
-},6500);
-setTimeout(function(){
-document.getElementById('wait3').style.visibility = "visible";
-},7600);
+      setTimeout(function(){
+      document.getElementById('wait1').style.visibility = "visible";
+      },5500);
+
+      setTimeout(function(){
+      document.getElementById('wait2').style.visibility = "visible";
+      },6500);
+
+      setTimeout(function(){
+      document.getElementById('wait3').style.visibility = "visible";
+      },7600);
+      
+      setTimeout(function(){
+      document.getElementById('wait4').style.visibility = "visible";
+      },9000);
+
     </script>
     
 </html>
