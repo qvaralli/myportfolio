@@ -5,7 +5,10 @@
 		<link rel="icon" type="image/png" href="passalternance/passalternanceplanete.png" />
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="passalternance/css/pass.css" />
+    <link rel="stylesheet" href="passalternance/css/pass.css"/>
+    <link rel="stylesheet" href="passalternance/css/animation.css"/>
+    <link rel="stylesheet" href="passalternance/css/surlign.css"/>
+    <link rel="stylesheet" href="passalternance/css/animation2.sass"/>
 		<link rel="stylesheet" href="assets/css/style.css" />
 		<link rel="stylesheet" href="assets/css/w3s.css">
         <link rel="stylesheet" href="assets/css/main.css" />
@@ -26,9 +29,9 @@
                 </div>
 
                 <div class="onphone">
-                    <div class="fade" style="height: 3em;">
+                    <div class="mainfade">
                     <main>
-                        <div id="animation-1" class="animation">
+                        <div id="animation-1" class="animation" style="margin-left: 40% !important;">
                         <div class="red">/</div>
                         <div class="white light mask">
                           <div>QR Code</div>
@@ -36,23 +39,33 @@
                         <div class="white light mask">
                           <div>&nbsp;Scanné</div>
                         </div>
-                      </div>
-                                           
+                      </div>          
                       <!-- <div id="animation-2" class="animation">
                         <div class="red bold arimo mask">
-                          <div>QR Code</div>
+                          <div>Pass</div>
                         </div>
-                        <div class="white light mask">
-                          <div>Activé</div>
+                        <div class="white light mask" style="margin-bottom: 100px; ">
+                          <div>alternance</div>
                         </div>
                       </div> -->
                     </main>
 
-                    </div>
-                    <div style="height: 50em;">
+                  </div>
+                    
+                    
+                    <div>
+                      
+                      <div class="etudiant" >
+                        <h2 class="textFade1" style="font-size: 2em; ">Rassurez-vous !</h2>
+                        <p class="textFade2" style="font-size: 5vw; margin-bottom: 0; ">Ceci n'est pas</p>
+                        <p class="textFade3" style="font-size: 5vw; margin-bottom: 0; ">un nouveau pass sanitaire,</p>
+                        <p class="textFade4" style="font-size: 7vw;">mais un projet étudiant !</p>
+                        
+                      </div>
+                      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<div id="mydiv">myDiv</div>
                       <div class="hind"><a href="affiches.html">Où trouver une affiche ?</a>  <span><img class="eyes" src="passalternance/eyes.png"></span></div>
 
-                      <p>ça n'a pas de lien avec le pass sanitaire, il ne s'agit que du projet d'un étudiant</p>
                       <p>Félicitation !</p>
                       <p>Félicitation !</p>
                       <p>Félicitation !</p>
@@ -67,12 +80,17 @@
                       <p>Félicitation !</p>
                       <p>Félicitation !</p>
                     </div>
-                 
+                  </div>
                   </div>
                  
             </div>
 
         
     </body>
+    <script>
+      setTimeout(function() {
+    $('#mydiv').hide();
+});
+    </script>
     
 </html>
