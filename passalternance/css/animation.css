@@ -169,7 +169,7 @@
 
 
 .textFade1 {
-    animation: fade ease 1s;
+    animation: fade ease 1.6s;
     animation-delay: 5s;
 }
 .textFade2{
