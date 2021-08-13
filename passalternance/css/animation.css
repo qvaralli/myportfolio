@@ -4,9 +4,7 @@
 
   @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
   @import url(https://fonts.googleapis.com/css?family=Arimo:400,700);
-  body {
-      margin: 0;
- }
+
   main {
       font-family: "Posterama Text W07 Regular";
       /* text-transform: uppercase; */
@@ -159,7 +157,8 @@
  
 
  @media screen and (max-width: 700px) {
- .etudiant {
+
+.etudiant {
     visibility:hidden;
     margin-top: 50px;
     width: 100%;
@@ -171,19 +170,15 @@
 
 .textFade1 {
     animation: fade ease 1s;
-    animation-delay: 1s;
+    animation-delay: 5s;
 }
 .textFade2{
-    animation: fade ease 2s;
-    animation-delay: 2.2s;
+    animation: fade ease 1.5s;
+    animation-delay: 5.9s;
 }
 .textFade3{
-    animation: fade ease 2.2s;
-    animation-delay: 2.4s;
-}
-.textFade4{
-    animation: fade ease 2.4s;
-    animation-delay: 4s;
+    animation: fade ease 1.5s;
+    animation-delay: 7s;
 }
 
 .fade-in {
