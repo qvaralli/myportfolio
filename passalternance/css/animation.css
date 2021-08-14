@@ -181,21 +181,32 @@
     animation-delay: 7s;
 }
 
-#wait4 {
+/* #wait4 {
+    position:absolute;
     visibility:hidden;
-    animation: fade ease 2s;
+	-webkit-animation:mymove 2s linear infinite;
+    animation-delay: 8.9s;
+} */
+
+#wait4 {  
+    visibility:hidden;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
     animation-delay: 8.9s;
 }
 
-.fade-in {
+/* .fade-in {
     animation: fadeIn ease 5s;
     -webkit-animation: fadeIn ease 5s;
     -moz-animation: fadeIn ease 5s;
     -o-animation: fadeIn ease 5s;
     -ms-animation: fadeIn ease 5s;
     animation-iteration-count: infinite;
-  }
+} */
 
+	
 @keyframes fade {
   0% {
       transform:translateY(100px);
@@ -213,6 +224,21 @@
   };
 }
 
+
+@-webkit-keyframes mymove{
+    
+	0%{bottom:15%;}
+	50%{bottom:10%;}
+	100%{bottom:15%;}
+	}
+    
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    55%  { transform: translate(0, 30px); }
+    to   { transform: translate(0, -0px); }    
+}
+    
 
 
  }
